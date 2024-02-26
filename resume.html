@@ -1,177 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-<style>
-    body {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        background-color: #f4f4f4;
-        color: #000000;
-        
-    }
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
+            color: #000000;
+        }
+        header {
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            margin: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.904);
+            border-radius: 8px;
+            box-shadow: rgba(241, 26, 162, 0.4) 0px 5px, rgba(215, 37, 255, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(255, 150, 215, 0.1) 0px 20px, rgba(255, 127, 240, 0.05) 0px 25px;
+        }
+        .name {
+            font-style: italic;
+            font-size: xx-large;
+            background-image: linear-gradient(57.4deg, rgb(127, 61, 233) 4.6%, rgb(230, 101, 161) 26%, rgb(226, 201, 240) 49.1%, rgb(98, 177, 250) 86.5%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
 
-    header {
-        text-align: center;
-        padding: 1em;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
 
-    section {
-        margin: 50px;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.904);
-        border-radius: 8px;
-        box-shadow: rgba(241, 26, 162, 0.4) 0px 5px, rgba(215, 37, 255, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(255, 150, 215, 0.1) 0px 20px, rgba(255, 127, 240, 0.05) 0px 25px;
-    }
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #b11ed6eb;
+            text-align: left;
+        }
 
-    .name { 
-        font-style: italic;
-        font-size: xx-large;
-        background-image: linear-gradient(57.4deg, rgb(127, 61, 233) 4.6%, rgb(230, 101, 161) 26%, rgb(226, 201, 240) 49.1%, rgb(98, 177, 250) 86.5%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-    }
+        .git {
+            width: 4rem;
+            text-align: left;
+        }
 
-    th, td {
-        padding: 10px;
-        border: 1px solid #b11ed6eb;
-        text-align: left;
-    }
+        .link {
+            width: 4rem;
+            text-align: left;
+        }
 
-    img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-    
-    .git {
-        width: 1.4rem;
-        text-align: left;
-    }
-    .link {
-        width: 1.4rem;
-        text-align: left;
-    }
+        .gmail {
+            width: 4rem;
+            text-align: left;
+        }
 
-    .gmail {
-        width: 1.4rem;
-        text-align: left;
-    }
-    .wa {
-        width: 1.4rem;
-        text-align: left;
-    }
-    .py {
-        width: 1.8rem;
-        text-align: left;
-    }
-    .c {
-        width: 1.8rem;
-        text-align: left;
-    }
-    .sql {
-        width: 1.8rem;
-        text-align: left;
-    }
-    .AutoCAD {
-        width: 1.8rem;
-        text-align: left;
-    }
-</style>
+        .py {
+            width: 1.8rem;
+            text-align: left;
+        }
+
+        .c {
+            width: 1.8rem;
+            text-align: left;
+        }
+
+        .sql {
+            width: 1.8rem;
+            text-align: left;
+        }
+
+        .AutoCAD {
+            width: 1.8rem;
+            text-align: left;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        .skills-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .skills-icons{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            gap:2.5rem;
+            align-items: center;
+        }
+        .skills-icons img{
+            width:3rem;
+        }
+    </style>
 </head>
+
 <body>
-<header>
-    <p class="name">Anand Abhimanyu</p>
-    <p>Web Developer</p>
-</header>
+    <header>
+        <p class="name">Anand Abhimanyu</p>
+        <p>Web Developer</p>
+    </header>
 
-<p><a href="https://wa.link/0jmd7o" target="_blank">
-        <img class="wa" src="https://cdn-icons-png.flaticon.com/128/12635/12635043.png">
-    </a>
-    <a href="https://github.com/hashAbhiBytes" target="_blank">
-        <img class="git" src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png">
-    </a>
-    <a href="https://www.linkedin.com/in/abhimanyu-09675021b/" target="_blank">
-        <img class="link" src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png">
-    </a>
-    <a href="mailto:anandabhimanyuyo@gmail.com" target="_blank">
-        <img class="gmail" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png">
-    </a>
-        </p>
-    
+    <div class="contact-icons">
+        <a href="https://github.com/hashAbhiBytes" target="_blank">
+            <img class="git" src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png">
+        </a>
+        <a href="https://www.linkedin.com/in/abhimanyu-09675021b/" target="_blank">
+            <img class="link" src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png">
+        </a>
+        <a href="mailto:anandabhimanyuyo@gmail.com" target="_blank">
+            <img class="gmail" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png">
+        </a>
+    </div>
 
-<section>
-    <h2>Education</h2>
-    <table>
-        <tr>
-            <th>Degree</th>
-            <th>Institute</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>Bachelor of Technology in Information Technology</td>
-            <td>Veermata Jeejabai Technological Institute</td>
-            <td>2023-27</td>
-        </tr>
-    </table>
-</section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Python</li> <img class="py" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png">
-        <li>C++</li> <img class="c" src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png">
-        <li>SQL/MySQL</li> <img class="sql" src="https://cdn-icons-png.flaticon.com/128/5968/5968364.png" >
-        <li>Basic MS Office</li>
-        <li>Swift</li>
-        <li>AutoCAD</li> <img class="AutoCAD" src="https://cdn-icons-png.flaticon.com/128/5768/5768781.png">
-    </ul>
-</section>
-<section>
-   <h2>Projects</h2>
-   <li><p><b>WEBDEV</b></p>
-    <p>2023 </p>
-    <p>Made a portfolio using HTML5 and CSS also,
-    Made a working bulb using HTML, CSS and Node JS.</p></li>
-   
-   
-    <li><p><b>PYTHON</b> </p>
-    <p>2020</p>
-        <p>Bus Reservation Management System</p>
+    <section>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Technology in Information Technology</td>
+                <td>Veermata Jijabai Technological Institute</td>
+                <td>2023-27</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-div">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQL/MySQL</li>
+                <li>Basic MS Office</li>
+                <li>Swift</li>
+                <li>AutoCAD</li>
+            </ul>
+            <div class="skills-icons">
+                <img  src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" />
+                <img  src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" />
+                <img  src="https://cdn-icons-png.flaticon.com/128/5968/5968364.png" />
+                <img  src="https://cdn-icons-png.flaticon.com/128/5768/5768781.png" />
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <li>
+            <p><b>WEBDEV</b></p>
+            <p>2023 </p>
+            <p>Made a portfolio using HTML5 and CSS also,
+                Made a working bulb using HTML, CSS and Node JS.</p>
+        </li>
+
+
+        <li>
+            <p><b>PYTHON</b> </p>
+            <p>2020</p>
+            <p>Bus Reservation Management System</p>
             <p>The Bus ticket reservation system is currently maintaining the project
-            Transport Company’s process manually which is a very time-consuming
-            process. It deals with transport industry’s ticket booking and transport
-            maintenance, so it becomes very tedious job for the ticket booking
-            transporter to look after these particulars to complete the task at right
-            time. The bus ticket booking system not only deals with transporters
-            owned vehicles but also takes into consideration about the other types
-            project of system transport vehicles available with other transporters.
-            I used Python to code and then saved the user data in SQL which also gets
-            saved in Excel
-            </p></li>
-</section>
+                Transport Company’s process manually which is a very time-consuming
+                process. It deals with transport industry’s ticket booking and transport
+                maintenance, so it becomes very tedious job for the ticket booking
+                transporter to look after these particulars to complete the task at right
+                time. The bus ticket booking system not only deals with transporters
+                owned vehicles but also takes into consideration about the other types
+                project of system transport vehicles available with other transporters.
+                I used Python to code and then saved the user data in SQL which also gets
+                saved in Excel
+            </p>
+        </li>
+    </section>
 
-<section>
-    <h2>Languages</h2>
-    <p>English (Fluent)</p>
-    <p>Hindi</p>
-</section>
+    <section>
+        <h2>Languages</h2>
+        <p>English (Fluent)</p>
+        <p>Hindi</p>
+    </section>
 
-<section>
-    <h2>References</h2>
-    <p>Available upon request</p>
-</section>
+    <section>
+        <h2>References</h2>
+        <p>Available upon request</p>
+    </section>
 </body>
+
 </html>
